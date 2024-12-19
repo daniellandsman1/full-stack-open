@@ -1,4 +1,4 @@
-Part of diagram that details fetching the style sheet, JavaScript code, and raw notes data is from
+The part of the diagram that details fetching the style sheet, JavaScript code, and raw notes data is from
 Full stack open's provided code under "0.4: New note diagram".
 
 ```mermaid
