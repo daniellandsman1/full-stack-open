@@ -1,3 +1,5 @@
+The diagram is based on Full stack open's provided code under "0.4: New note diagram".
+
 ```mermaid
 sequenceDiagram
     participant browser
@@ -13,7 +15,7 @@ sequenceDiagram
     server-->>browser: the css file
     deactivate server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
     activate server
     server-->>browser: the JavaScript file
     deactivate server
