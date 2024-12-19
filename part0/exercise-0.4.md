@@ -1,4 +1,4 @@
-The part of the diagram that details fetching the style sheet, JavaScript code, and raw notes data is from
+The sequence for fetching the style sheet, JavaScript code, and raw notes data is from
 Full stack open's provided code under "0.4: New note diagram".
 
 ```mermaid
@@ -9,7 +9,7 @@ sequenceDiagram
     browser->>server: POST /new_note
     activate server
 
-    Note right of browser: Button click sends user input to server
+    Note right of browser: The button click sends user input to server
 
     server-->>browser: HTTP status code 302 redirect
     deactivate server
