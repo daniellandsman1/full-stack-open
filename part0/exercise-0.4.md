@@ -3,10 +3,15 @@ sequenceDiagram
     participant browser
     participant server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    browser->>server: POST new_note
     activate server
-    server-->>browser: HTML document
+
+    Note right of browser: On button click, user input is sent to the server address new_note
+
+    server-->>browser: HTTP status code 302
     deactivate server
+
+    Note right of browser: URL redirect, server asks browser to reload the page
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate server
