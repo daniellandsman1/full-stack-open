@@ -1,3 +1,5 @@
+The diagram is based on Full stack open's provided code under "0.4: New note diagram".
+
 ```mermaid
 sequenceDiagram
     participant browser
