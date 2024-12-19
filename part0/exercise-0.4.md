@@ -1,4 +1,4 @@
-The sequence for fetching the style sheet, JavaScript code, and raw notes data is from
+The sequence for fetching the HTML document, style sheet, JavaScript code, and raw notes data is from
 Full stack open's provided code under "0.4: New note diagram".
 
 ```mermaid
