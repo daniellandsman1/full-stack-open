@@ -21,7 +21,7 @@ sequenceDiagram
     server-->>browser: HTML document
     deactivate server
 
-    Note right of browser: The Notes page is reloaded
+    Note right of browser: The browser reloads the Notes page.
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate server
