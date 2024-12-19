@@ -11,7 +11,7 @@ sequenceDiagram
 
     Note right of browser: The button click sends user input to server
 
-    server-->>browser: HTTP status code 302 redirect
+    server-->>browser: HTTP status code 302 (Found)
     deactivate server
 
     Note right of browser: The server redirects, causing the browser to reload the page
