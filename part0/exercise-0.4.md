@@ -14,7 +14,7 @@ sequenceDiagram
     server-->>browser: HTTP status code 302 redirect
     deactivate server
 
-    Note right of browser: Server redirects, browser reloads the page
+    Note right of browser: The server redirects, causing the browser to reload the page
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate server
