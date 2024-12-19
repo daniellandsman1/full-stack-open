@@ -3,9 +3,9 @@ sequenceDiagram
     participant browser
     participant server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    browser->>server: POST /new_note_spa
     activate server
-    server-->>browser: HTML document
+    server-->>browser: Status code 201 (Created)
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
