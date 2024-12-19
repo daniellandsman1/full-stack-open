@@ -5,7 +5,7 @@ sequenceDiagram
 
     browser->>server: POST /new_note_spa
     activate server
-    server-->>browser: Status code 201 (Created)
+    server-->>browser: HTTP status code 201 (Created)
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
