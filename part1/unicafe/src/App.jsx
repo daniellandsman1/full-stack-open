@@ -1,5 +1,6 @@
 import { useState } from 'react'
 
+// Header component, prints the large text like 'give feedback' and 'statistics'
 const Header = (props) => {
   console.log('header printed')
   return (
@@ -7,6 +8,7 @@ const Header = (props) => {
   )
 }
 
+// Button component, renders a button like 'good', 'neutral', or 'bad'
 const Button = (props) => {
   console.log('button rendered')
   return (
@@ -16,6 +18,7 @@ const Button = (props) => {
   )
 }
 
+// Statistics component, prints feedback statistics in a table
 const Statistics = ({good, neutral, bad, total}) => {
   console.log('printing statistics')
 
@@ -42,6 +45,7 @@ const Statistics = ({good, neutral, bad, total}) => {
   )
 }
 
+// StatisticLine component, prints a single row of the statistics table
 const StatisticLine = (props) => {
   return (
     <tr>
@@ -51,6 +55,7 @@ const StatisticLine = (props) => {
   )
 }
 
+// App component, prints headers and manages state, button clicks, and printing statistics
 const App = () => {
   // save clicks of each button to its own state
   const [good, setGood] = useState(0)
